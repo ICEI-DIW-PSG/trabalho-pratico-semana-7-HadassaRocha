@@ -14,10 +14,6 @@
       <nav>
         <ul class="nav flex-wrap gap-3">
           <li class="nav-item"><a class="nav-link fw-bold text-dark" href="index.html">Início</a></li>
-          <li class="nav-item"><a class="nav-link fw-bold text-dark" href="#">Notícias</a></li>
-          <li class="nav-item"><a class="nav-link fw-bold text-dark" href="#">Artistas</a></li>
-          <li class="nav-item"><a class="nav-link fw-bold text-dark" href="#">Álbuns</a></li>
-          <li class="nav-item"><a class="nav-link fw-bold text-dark" href="#">Contato</a></li>
         </ul>
       </nav>
     </div>
@@ -25,7 +21,7 @@
 
   <main class="container mb-5">
     <div id="detalhesContainer" class="row justify-content-center">
-      <!-- Card será inserido aqui via JS -->
+      <!-- Card do item será inserido via app.js -->
     </div>
 
     <div class="text-center mt-4">
@@ -38,33 +34,5 @@
   </footer>
 
   <script src="app.js"></script>
-  <script>
-    const params = new URLSearchParams(window.location.search);
-    const id = parseInt(params.get('id'));
-
-    const item = noticias.find(n => n.id === id);
-    const container = document.querySelector('#detalhesContainer');
-
-    if (item) {
-      const col = document.createElement('div');
-      col.className = 'col-12 col-md-8 col-lg-6 mb-4';
-      col.innerHTML = `
-        <div class="card position-relative shadow-sm">
-          <span class="badge bg-${item.corCategoria} position-absolute" style="top: 10px; left: 10px;">${item.categoria}</span>
-          <img src="${item.imagem}" class="card-img-top" alt="${item.titulo}">
-          <div class="card-body">
-            <h1 class="card-title fs-5 fw-bold">${item.titulo}</h1>
-            <p class="card-text">${item.descricao}</p>
-          </div>
-        </div>
-      `;
-      container.appendChild(col);
-    } else {
-      container.innerHTML = `<p class="text-center">Notícia não encontrada.</p>`;
-    }
-  </script>
-
 </body>
 </html>
-
-
