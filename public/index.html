@@ -1,13 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="app.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AudioMix</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-    <h1>Olá mundo</h1>
+<body class="bg-light">
+
+  <header class="bg-white shadow-sm p-3 mb-4">
+    <div class="container">
+      
+      <nav class="mb-3">
+        <ul class="nav flex-wrap gap-3">
+          <li class="nav-item"><a class="nav-link fw-bold text-dark" href="#">Início</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold text-dark" href="#">Notícias</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold text-dark" href="#">Artistas</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold text-dark" href="#">Álbuns</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold text-dark" href="#">Contato</a></li>
+        </ul>
+      </nav>
+
+      <form class="d-flex flex-wrap gap-2">
+        <input class="form-control flex-grow-1" type="search" placeholder="Buscar notícia, álbum ou artista...">
+        <button class="btn btn-dark" type="submit">Buscar</button>
+      </form>
+
+    </div>
+  </header>
+
+  <main class="container mb-5">
+    <section>
+      <h1 class="mb-3">Notícias</h1>
+      <h3 class="h5 text-secondary">Trap</h3>
+      <p>Aqui você encontra informações sobre os maiores nomes do gênero, seus lançamentos, álbuns e eventos em tempo real.</p>
+
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+
+ <!-- Card 1 -->
+<div class="col">
+  <div class="card h-100 shadow-sm">
+    <img src="imagens/EVOM.jpg" class="card-img-top" alt="EVOM">
+    <div class="card-body">
+      <span class="badge bg-danger mb-2">LANÇAMENTO</span>
+      <h3 class="fs-6 fw-semibold">Veigh lança novo álbum chamado "EVOM", disponível em todas as plataformas digitais.</h3>
+    </div>
+  </div>
+</div>
+
+<!-- Card 2 -->
+<div class="col">
+  <div class="card h-100 shadow-sm">
+    <img src="imagens/SIDOKA.jpg" class="card-img-top" alt="Sidoka">
+    <div class="card-body">
+      <span class="badge bg-primary mb-2">EVENTOS</span>
+      <h3 class="fs-6 fw-semibold">Sidoka faz show histórico na Virada Cultural, com ''direito'' a invasão de fãs no palco durante sua apresentação.</h3>
+    </div>
+  </div>
+</div>
+
+<!-- Card 3 -->
+<div class="col">
+  <div class="card h-100 shadow-sm">
+    <img src="imagens/MATUE.jpg" class="card-img-top" alt="Matue">
+    <div class="card-body">
+      <span class="badge bg-primary mb-2">EVENTOS</span>
+      <h3 class="fs-6 fw-semibold">Matuê se apresenta no último dia da FIB 2025, artista abriu o show da noite.</h3>
+    </div>
+  </div>
+</div>
+
+<!-- Card 4 -->
+<div class="col">
+  <div class="card h-100 shadow-sm">
+    <img src="imagens/thetown.jpg" class="card-img-top" alt="The Town">
+    <div class="card-body">
+      <span class="badge bg-primary mb-2">EVENTOS</span>
+      <h3 class="fs-6 fw-semibold">The Town conta com apresentações vários artistas em seu festival, dentre eles Travis Scott e Don Toliver.</h3>
+    </div>
+  </div>
+</div>
+
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">2025 AudioMix - Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
