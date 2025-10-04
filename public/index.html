@@ -6,6 +6,7 @@
   <title>AudioMix</title>
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-light">
 
@@ -36,53 +37,16 @@
       <h3 class="h5 text-secondary">Trap</h3>
       <p>Aqui você encontra informações sobre os maiores nomes do gênero, seus lançamentos, álbuns e eventos em tempo real.</p>
 
-      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+      <!-- Botões de filtro -->
+      <div class="mb-3">
+        <button class="btn btn-outline-dark me-2 filtro-btn" data-categoria="TODAS">Todas</button>
+        <button class="btn btn-outline-danger me-2 filtro-btn" data-categoria="LANÇAMENTO">Lançamentos</button>
+        <button class="btn btn-outline-primary filtro-btn" data-categoria="EVENTOS">Eventos</button>
+      </div>
 
- <!-- Card 1 -->
-<div class="col">
-  <div class="card h-100 shadow-sm">
-    <img src="imagens/EVOM.jpg" class="card-img-top" alt="EVOM">
-    <div class="card-body">
-      <span class="badge bg-danger mb-2">LANÇAMENTO</span>
-      <h3 class="fs-6 fw-semibold">Veigh lança novo álbum chamado "EVOM", disponível em todas as plataformas digitais.</h3>
-    </div>
-  </div>
-</div>
-
-<!-- Card 2 -->
-<div class="col">
-  <div class="card h-100 shadow-sm">
-    <img src="imagens/SIDOKA.jpg" class="card-img-top" alt="Sidoka">
-    <div class="card-body">
-      <span class="badge bg-primary mb-2">EVENTOS</span>
-      <h3 class="fs-6 fw-semibold">Sidoka faz show histórico na Virada Cultural, com ''direito'' a invasão de fãs no palco durante sua apresentação.</h3>
-    </div>
-  </div>
-</div>
-
-<!-- Card 3 -->
-<div class="col">
-  <div class="card h-100 shadow-sm">
-    <img src="imagens/MATUE.jpg" class="card-img-top" alt="Matue">
-    <div class="card-body">
-      <span class="badge bg-primary mb-2">EVENTOS</span>
-      <h3 class="fs-6 fw-semibold">Matuê se apresenta no último dia da FIB 2025, artista abriu o show da noite.</h3>
-    </div>
-  </div>
-</div>
-
-<!-- Card 4 -->
-<div class="col">
-  <div class="card h-100 shadow-sm">
-    <img src="imagens/thetown.jpg" class="card-img-top" alt="The Town">
-    <div class="card-body">
-      <span class="badge bg-primary mb-2">EVENTOS</span>
-      <h3 class="fs-6 fw-semibold">The Town conta com apresentações vários artistas em seu festival, dentre eles Travis Scott e Don Toliver.</h3>
-    </div>
-  </div>
-</div>
-
-
+      <!-- Div para os cards -->
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4" id="noticiasContainer">
+        <!-- Cards serão inseridos dinamicamente -->
       </div>
     </section>
   </main>
@@ -91,6 +55,9 @@
     <p class="mb-0">2025 AudioMix - Todos os direitos reservados.</p>
   </footer>
 
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
+
