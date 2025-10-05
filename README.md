@@ -13,10 +13,10 @@ Leia o enunciado completo no Canvas.
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome: Hadassa Carvalho
+- Matricula: 1593566
+- Proposta de projeto escolhida: Artistas e álbuns
+- Breve descrição sobre seu projeto: Informações sobre os maiores nomes do gênero, seus lançamentos, álbuns e eventos em tempo real.
 
 ## Print da Home-Page
 
