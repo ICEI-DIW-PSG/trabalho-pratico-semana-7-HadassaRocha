@@ -20,25 +20,48 @@ Leia o enunciado completo no Canvas.
 
 ## Print da Home-Page
 
-<<  COLOQUE A IMAGEM AQUI >>
+![Pagina](public/imagens/pag.PNG)
 
 ## Print da página de detalhes do item
 
-<<  COLOQUE A IMAGEM AQUI >>
+![Detalhes](public/imagens/detalhes.PNG)
 
 ## Cole aqui abaixo a estrutura JSON utilizada no app.js
 
 ```javascript
-const dados = [
+const noticias = [
   {
-    "id": 1,
-    "titulo": "Prefeitura Lança Plano de Mobilidade Urbana",
-    "descricao": "Novo plano do transporte público.",
-    "conteudo": "A Prefeitura apresentou nesta segunda-feira um novo plano de mobilidade urbana.",
-    "categoria": "Cidades",
-    "autor": "Joana Ribeiro",
-    "data": "2025-03-30",
-    "imagem": "img/mobilidade.jpg"
+    id: 1,
+    titulo: 'Veigh lança novo álbum chamado "EVOM"',
+    descricao: 'Disponível em todas as plataformas digitais.',
+    imagem: 'imagens/EVOM.jpg',
+    categoria: 'LANÇAMENTO',
+    corCategoria: 'danger'
+  },
+  {
+    id: 2,
+    titulo: 'Sidoka faz show histórico na Virada Cultural',
+    descricao: 'Direito a invasão de fãs no palco durante sua apresentação.',
+    imagem: 'imagens/SIDOKA.jpg',
+    categoria: 'EVENTOS',
+    corCategoria: 'primary'
+  },
+  {
+    id: 3,
+    titulo: 'Matuê se apresenta no último dia da FIB 2025',
+    descricao: 'Artista abriu o show da noite.',
+    imagem: 'imagens/MATUE.jpg',
+    categoria: 'EVENTOS',
+    corCategoria: 'primary'
+  },
+  {
+    id: 4,
+    titulo: 'The Town conta com apresentações de vários artistas',
+    descricao: 'Dentre eles Travis Scott e Don Toliver.',
+    imagem: 'imagens/thetown.jpg',
+    categoria: 'EVENTOS',
+    corCategoria: 'primary'
   }
+];
 ]
 ```
